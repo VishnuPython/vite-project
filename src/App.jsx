@@ -1,6 +1,7 @@
 import Excel from "./Excel.jsx";
 import Send from "./Send.jsx";
-import Data from "./Data.JSX";
+import Data from "./Data.jsx";
+import Toggle from './Toggle.jsx';
 import Spreadsheet from "react-spreadsheet";
 import { useEffect, useState } from "react";
 
@@ -22,7 +23,9 @@ function App() {
   },[json]);*/
   
   return(
-    <div className="flex flex-row min-h-screen justify-center items-center ">
+
+    <div className="flex flex-row min-h-screen justify-center items-center "> 
+      <Toggle/>
       <Excel setFile={handleFile} setPhone={handlePhone} setData={handleData} setJSON={handleJSON} />
       <Send data={data} phone={phone}/>
       </div>
