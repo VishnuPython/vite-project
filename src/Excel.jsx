@@ -1,5 +1,4 @@
 import {useState } from "react";
-import Data from "./Data.JSX";
 import * as XLSX from 'xlsx';
 
 const Excel=({setFile,setPhone,setData,setJSON})=>{
